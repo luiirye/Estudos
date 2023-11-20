@@ -18,4 +18,19 @@ public class Medico extends BasePessoa {
         super(codigo, nome, email, rg, cpf, dataNascimento);
         this.matricula = matricula;
     }
+
+    @Override
+    public String toString() {
+        
+        String mensagem = "";
+
+        mensagem += "--------------------------------------------------------------\n";
+        
+    
+        
+        return "Medico [matricula=" + matricula + "]";
+    }
+
+    
+
 }

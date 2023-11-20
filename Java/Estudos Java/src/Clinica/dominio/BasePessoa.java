@@ -50,4 +50,13 @@ public abstract class BasePessoa extends BaseIdentificador {
     protected int codigoProfissao;
     protected int codigoEscolaridade;
     protected ArrayList<Endereco> codigoEndereco;
+
+    @Override
+    public String toString() {
+        return "BasePessoa [nome=" + nome + ", email=" + email + ", rg=" + rg + ", cpf=" + cpf + ", dataNascimento="
+                + dataNascimento + ", codigoProfissao=" + codigoProfissao + ", codigoEscolaridade=" + codigoEscolaridade
+                + ", codigoEndereco=" + codigoEndereco + "]";
+    } 
+
+    
 }
