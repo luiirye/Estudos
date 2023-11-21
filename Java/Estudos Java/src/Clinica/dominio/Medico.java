@@ -1,6 +1,7 @@
 package Clinica.dominio;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class Medico extends BasePessoa {
     
@@ -14,21 +15,12 @@ public class Medico extends BasePessoa {
         this.matricula = matricula;
     }
 
-    public Medico(int codigo, String nome, String email, String rg, String cpf, Date dataNascimento, String matricula) {
-        super(codigo, nome, email, rg, cpf, dataNascimento);
+    public Medico(int codigo, String nome, String email, String rg, String cpf, LocalDate localDate, String matricula) {
+        super(codigo, nome, email, rg, cpf, localDate);
         this.matricula = matricula;
     }
 
-    @Override
-    public String toString() {
-        
-        String mensagem = "";
-
-        mensagem += "--------------------------------------------------------------\n";
-        
-    
-        
-        return "Medico [matricula=" + matricula + "]";
+    public Medico(int codigo, String nome, String email, String rg, String cpf, LocalDate of, String matricula2) {
     }
 
     
