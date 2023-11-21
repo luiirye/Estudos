@@ -1,12 +1,12 @@
 package Clinica.dominio;
 
-import java.sql.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public abstract class BasePessoa extends BaseIdentificador {
 
     protected String nome, email, rg, cpf;
-    protected Date dataNascimento;
+    protected LocalDate dataNascimento;
     
     public String getNome() {
         return nome;
@@ -32,13 +32,13 @@ public abstract class BasePessoa extends BaseIdentificador {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-    public BasePessoa(int codigo, String nome, String email, String rg, String cpf, Date dataNascimento) {
+    public BasePessoa(int codigo, String nome, String email, String rg, String cpf, LocalDate dataNascimento) {
         super(codigo);
         this.nome = nome;
         this.email = email;
@@ -46,7 +46,7 @@ public abstract class BasePessoa extends BaseIdentificador {
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
     }
-
+    
     protected int codigoProfissao;
     protected int codigoEscolaridade;
     protected ArrayList<Endereco> codigoEndereco;
@@ -56,7 +56,5 @@ public abstract class BasePessoa extends BaseIdentificador {
         return "BasePessoa [nome=" + nome + ", email=" + email + ", rg=" + rg + ", cpf=" + cpf + ", dataNascimento="
                 + dataNascimento + ", codigoProfissao=" + codigoProfissao + ", codigoEscolaridade=" + codigoEscolaridade
                 + ", codigoEndereco=" + codigoEndereco + "]";
-    } 
-
-    
+    }
 }
