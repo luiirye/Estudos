@@ -1,4 +1,4 @@
-package Clinica.dominio;
+package clinica.dominio;
 
 public abstract class BaseComum extends BaseIdentificador {
 
@@ -15,5 +15,11 @@ public abstract class BaseComum extends BaseIdentificador {
     public BaseComum(int codigo, String descricao) {
         super(codigo);
         this.descricao = descricao;
-    } 
+    }
+
+    @Override
+    public String toString() {
+        return "BaseComum [descricao=" + descricao + "]";
+    }
+
 }

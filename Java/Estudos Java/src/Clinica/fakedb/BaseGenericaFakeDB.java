@@ -1,23 +1,26 @@
-package Clinica.fakedb;
+package clinica.fakedb;
 
 import java.util.ArrayList;
 
-public abstract class BaseGenericaFakeDB<TDominio> {
+public abstract class BaseGenericaFakeDB<Tdominio> {
 
-    protected ArrayList<TDominio> tabela;
+    protected ArrayList<Tdominio> tabela;
 
-    public ArrayList<TDominio> getTabela() {
-        if (this.tabela == null) {
+    public ArrayList<Tdominio> getTabela(){
+        if (this.tabela == null){
             this.tabela = new ArrayList<>();
+
         }
-        
-        return this.tabela; 
+        return this.tabela;
+    }
+    
+    public abstract void CarregarDados();
+
+        public BaseGenericaFakeDB(){
+
+        this.getTabela();
+        this.CarregarDados();
+    
     }
 
-    public abstract void CarregadarDados();
-    
-    public BaseGenericaFakeDB(){
-        this.getTabela();
-        this.CarregadarDados();
-    }
 }

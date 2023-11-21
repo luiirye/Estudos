@@ -1,9 +1,9 @@
-package Clinica.dominio;
+package clinica.dominio;
 
 import java.time.LocalDate;
 
 public class Responsavel extends BasePessoa {
-    
+
     private String relacionamento;
 
     public String getRelacionamento() {
@@ -19,4 +19,5 @@ public class Responsavel extends BasePessoa {
         super(codigo, nome, email, rg, cpf, dataNascimento);
         this.relacionamento = relacionamento;
     }
+    
 }

@@ -1,7 +1,7 @@
-package Clinica.dominio;
+package clinica.dominio;
 
-public class Endereco extends BaseIdentificador{
-    
+public class Endereco extends BaseIdentificador {
+
     private String logradouro, complemento;
     private int numero, cep, caixaPostal;
     
@@ -42,5 +42,5 @@ public class Endereco extends BaseIdentificador{
         this.numero = numero;
         this.cep = cep;
         this.caixaPostal = caixaPostal;
-    }
+    } 
 }

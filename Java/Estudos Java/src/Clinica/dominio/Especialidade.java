@@ -1,7 +1,7 @@
-package Clinica.dominio;
+package clinica.dominio;
 
-public class Especialidade extends BaseIdentificador{
-    
+public class Especialidade extends BaseIdentificador {
+
     private String nomenclatura;
 
     public String getNomenclatura() {

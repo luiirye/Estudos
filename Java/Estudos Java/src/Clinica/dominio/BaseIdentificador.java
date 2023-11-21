@@ -1,4 +1,4 @@
-package Clinica.dominio;
+package clinica.dominio;
 
 public abstract class BaseIdentificador {
     
@@ -14,5 +14,10 @@ public abstract class BaseIdentificador {
 
     public BaseIdentificador(int codigo) {
         this.codigo = codigo;
+    }
+
+    @Override
+    public String toString() {
+        return "BaseIdentificador [codigo=" + codigo + "]";
     }
 }
