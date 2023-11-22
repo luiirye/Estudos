@@ -35,23 +35,20 @@ public class EspecialidadePorMedico extends Medico {
     public String toString() {
         String espmed = "";
 
-        espmed += "---------------------------------------------- \n";
+        espmed += "------------------------------------------------ \n";
 
-        espmed += "Medico [matricula = " + matricula + ", crms = " + crms + "]\n";
-        
+        espmed += "BaseIdentificador [codigo=" + codigo + "] \n";
+
         espmed += "BasePessoa [nome=" + nome + ", email=" + email + ", rg=" + rg + ", cpf=" + cpf + ", dataNascimento="
         + dataNascimento + ", codigoProfissao=" + codigoProfissao + ", codigoEscolaridade=" + codigoEscolaridade
-        + ", codigoEndereco=" + codigoEndereco + "]";
+        + ", codigoEndereco=" + codigoEndereco + "] \n";
 
-        espmed += "BaseIdentificador [codigo=" + codigo + "]";
+        espmed += "Medico [matricula=" + matricula + ", crms=" + crms + "] \n";
+
+        espmed += "EspecialidadePorMedico [codigoMedico=" + codigoMedico + ", codigoEspecialidade=" + codigoEspecialidade + "] \n";
+                 
+        espmed += "------------------------------------------------ \n";
         
-        
-        espmed += "EspecialidadePorMedico [codigoMedico=" + codigoMedico + ", codigoEspecialidade=" + codigoEspecialidade
-                + "]";
-             
-        return espmed;
+        return espmed; 
     }
-
-    
-
 }

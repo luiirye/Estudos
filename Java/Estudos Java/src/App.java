@@ -12,12 +12,15 @@
 // import clinica.dominio.RegistroCRM;
 // import clinica.fakedb.RegistroCrmFakeDB;
 
-import clinica.dominio.Endereco;
-import clinica.dominio.Especialidade;
-import clinica.dominio.EspecialidadePorMedico;
-import clinica.fakedb.EnderecoFakeDB;
-import clinica.fakedb.EspecialdiadePorMedicoFakeDB;
-import clinica.fakedb.EspecialidadeFakeDB;
+// import clinica.dominio.Endereco;
+// import clinica.dominio.Especialidade;
+// import clinica.dominio.EspecialidadePorMedico;
+// import clinica.fakedb.EnderecoFakeDB;
+// import clinica.fakedb.EspecialdiadePorMedicoFakeDB;
+// import clinica.fakedb.EspecialidadeFakeDB;
+
+import clinica.dominio.Escolaridade;
+import clinica.fakedb.EscolaridadeFakeDB;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -61,11 +64,15 @@ public class App {
             
         // }
         
-        EspecialdiadePorMedicoFakeDB db = new EspecialdiadePorMedicoFakeDB();
-        for (EspecialidadePorMedico espmed : db.getTabela()) {
-                System.out.println(espmed);
+        // EspecialdiadePorMedicoFakeDB db = new EspecialdiadePorMedicoFakeDB();
+        // for (EspecialidadePorMedico espmed : db.getTabela()) {
+        //         System.out.println(espmed.toString());
+        // }
+    
+        EscolaridadeFakeDB db = new EscolaridadeFakeDB();
+        for (Escolaridade esc : db.getTabela()) {
+            System.out.println(esc.toString());
+            
         }
-   
-   
     }
 }

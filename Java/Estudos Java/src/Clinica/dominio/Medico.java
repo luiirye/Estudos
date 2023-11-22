@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class Medico extends BasePessoa {
 
-    private String matricula;
-    private ArrayList<RegistroCRM> crms;
+    protected String matricula;
+    protected ArrayList<RegistroCRM> crms;
 
     public String getMatricula() {
         return matricula;
