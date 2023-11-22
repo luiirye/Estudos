@@ -42,5 +42,20 @@ public class Endereco extends BaseIdentificador {
         this.numero = numero;
         this.cep = cep;
         this.caixaPostal = caixaPostal;
+    }
+    @Override
+    public String toString() {
+        String end = "";
+
+        end += "------------------------------------------- \n";
+
+        end += "Endereco [logradouro=" + logradouro + ", complemento=" + complemento + ", numero=" + numero + ", cep="
+                + cep + ", caixaPostal=" + caixaPostal + "] \n";
+
+        end += "BaseIdentificador [codigo=" + codigo + "] \n";
+
+        end += "------------------------------------------- \n";
+        
+        return end;
     } 
 }

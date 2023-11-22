@@ -30,4 +30,28 @@ public class EspecialidadePorMedico extends Medico {
         this.codigoMedico = codigoMedico;
         this.codigoEspecialidade = codigoEspecialidade;
     }
+
+    @Override
+    public String toString() {
+        String espmed = "";
+
+        espmed += "---------------------------------------------- \n";
+
+        espmed += "Medico [matricula = " + matricula + ", crms = " + crms + "]\n";
+        
+        espmed += "BasePessoa [nome=" + nome + ", email=" + email + ", rg=" + rg + ", cpf=" + cpf + ", dataNascimento="
+        + dataNascimento + ", codigoProfissao=" + codigoProfissao + ", codigoEscolaridade=" + codigoEscolaridade
+        + ", codigoEndereco=" + codigoEndereco + "]";
+
+        espmed += "BaseIdentificador [codigo=" + codigo + "]";
+        
+        
+        espmed += "EspecialidadePorMedico [codigoMedico=" + codigoMedico + ", codigoEspecialidade=" + codigoEspecialidade
+                + "]";
+             
+        return espmed;
+    }
+
+    
+
 }

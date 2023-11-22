@@ -9,8 +9,15 @@
 //import clinica.dominio.Responsavel;
 //import clinica.fakedb.ResponsavelFakeDB;
 
-import clinica.dominio.RegistroCRM;
-import clinica.fakedb.RegistroCrmFakeDB;
+// import clinica.dominio.RegistroCRM;
+// import clinica.fakedb.RegistroCrmFakeDB;
+
+import clinica.dominio.Endereco;
+import clinica.dominio.Especialidade;
+import clinica.dominio.EspecialidadePorMedico;
+import clinica.fakedb.EnderecoFakeDB;
+import clinica.fakedb.EspecialdiadePorMedicoFakeDB;
+import clinica.fakedb.EspecialidadeFakeDB;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -37,10 +44,28 @@ public class App {
             
        //}
     
-        RegistroCrmFakeDB db = new RegistroCrmFakeDB();
-        for (RegistroCRM crm : db.getTabela()) {
-            System.out.println(crm.toString());
+        // RegistroCrmFakeDB db = new RegistroCrmFakeDB();
+        // for (RegistroCRM crm : db.getTabela()) {
+        //     System.out.println(crm.toString());
             
+        // }
+    
+        // EnderecoFakeDB db = new EnderecoFakeDB();
+        // for (Endereco end : db.getTabela()) {
+        //     System.out.println(end.toString());
+        // }
+    
+        // EspecialidadeFakeDB db = new EspecialidadeFakeDB();
+        // for (Especialidade esp : db.getTabela()) {
+        //     System.out.println(esp.toString());
+            
+        // }
+        
+        EspecialdiadePorMedicoFakeDB db = new EspecialdiadePorMedicoFakeDB();
+        for (EspecialidadePorMedico espmed : db.getTabela()) {
+                System.out.println(espmed);
         }
+   
+   
     }
 }

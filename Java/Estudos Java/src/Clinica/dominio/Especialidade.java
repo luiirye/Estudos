@@ -16,4 +16,17 @@ public class Especialidade extends BaseIdentificador {
         super(codigo);
         this.nomenclatura = nomenclatura;
     }
+
+    @Override
+    public String toString() {
+        String esp = "";
+
+        esp += "------------------------------------ \n";
+
+        esp += "Especialidade [nomenclatura=" + nomenclatura + "] \n";
+
+        esp += "BaseIdentificador [codigo=" + codigo + "] \n";
+        
+        return esp;
+    }
 }
