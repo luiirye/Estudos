@@ -3,8 +3,14 @@
 //import clinica.fakedb.MedicoFakeDB;
 //import clinica.fakedb.PacienteFakeDB;
 
-import clinica.dominio.Profissao;
-import clinica.fakedb.ProfissaoFakeDB;
+//import clinica.dominio.Profissao;
+//import clinica.fakedb.ProfissaoFakeDB;
+
+//import clinica.dominio.Responsavel;
+//import clinica.fakedb.ResponsavelFakeDB;
+
+import clinica.dominio.RegistroCRM;
+import clinica.fakedb.RegistroCrmFakeDB;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -20,9 +26,21 @@ public class App {
             
         // }
         
-        ProfissaoFakeDB db = new ProfissaoFakeDB();
-        for (Profissao pro : db.getTabela()) {
-            System.out.println(pro.toString());
+        // ProfissaoFakeDB db = new ProfissaoFakeDB();
+        // for (Profissao pro : db.getTabela()) {
+        //     System.out.println(pro.toString());
+        // }
+    
+        // ResponsavelFakeDB db = new ResponsavelFakeDB();
+        // for (Responsavel res : db.getTabela()) {
+        //     System.out.println(res.toString());
+            
+       //}
+    
+        RegistroCrmFakeDB db = new RegistroCrmFakeDB();
+        for (RegistroCRM crm : db.getTabela()) {
+            System.out.println(crm.toString());
+            
         }
     }
 }

@@ -16,4 +16,20 @@ public class RegistroCRM extends BaseIdentificador {
         super(codigo);
         this.numero = numero;
     }
+
+    @Override
+    public String toString() {
+        String reg = "";
+
+        reg += "==================================================== \n";
+
+        reg += "RegistroCRM [numero=" + numero + "] \n";
+
+        reg += "BaseIdentificador [codigo=" + codigo + "] \n";
+
+        reg += "==================================================== \n";
+        
+        return reg; 
+    }
+
 }

@@ -12,6 +12,7 @@ public class ProfissaoFakeDB extends BaseGenericaFakeDB<Profissao> {
 
     //Carregar Dados 
 
+    @Override
     public void CarregarDados(){
         this.tabela.add(new Profissao(1, "Médico Geral"));
         this.tabela.add(new Profissao(2, "Meretriz"));
