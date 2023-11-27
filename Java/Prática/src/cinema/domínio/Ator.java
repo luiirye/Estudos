@@ -26,6 +26,21 @@ public class Ator extends BaseIdentificador {
         this.papelDoAtor = papelDoAtor;
     }
 
+    @Override
+    public String toString() {
+        String ator = "";
+
+        ator += "================================ \n";
+
+        ator += "BaseIdentificador [codigo=" + codigo + "] \n";
+
+        ator += "Ator [nome=" + nome + ", papelDoAtor=" + papelDoAtor + "] \n"; 
+        
+        ator += "================================ \n";
+
+        return ator; 
+    }
+
     
     
 }

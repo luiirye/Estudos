@@ -16,5 +16,11 @@ public abstract class BaseIdentificador {
         this.codigo = codigo;
     }
 
+    @Override
+    public String toString() {
+        return "BaseIdentificador [codigo=" + codigo + "]";
+    }
+
+    
 
 }
