@@ -6,8 +6,14 @@
 // import cinema.domínio.Ingresso;
 // import cinema.fakedb.IngressoFakeDB;
 
-import cinema.domínio.Sala;
-import cinema.fakedb.SalaFakeDB;
+// import cinema.domínio.Sala;
+// import cinema.fakedb.SalaFakeDB;
+
+// import cinema.domínio.Sessao;
+// import cinema.fakedb.SessaoFakeDB;
+
+import cinema.domínio.FilmesPorAtor;
+import cinema.fakedb.FilmesPorAtorFakeDB;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -28,9 +34,20 @@ public class App {
         //     System.out.println(ing);
         // }
     
-        SalaFakeDB db = new SalaFakeDB();
-        for (Sala sala : db.getTabela()) {
-            System.out.println(sala);
+        // SalaFakeDB db = new SalaFakeDB();
+        // for (Sala sala : db.getTabela()) {
+        //     System.out.println(sala);
+        // }
+    
+        // SessaoFakeDB db = new SessaoFakeDB();
+        // for (Sessao sessao : db.getTabela()) {
+        //     System.out.println(sessao);
+        // }
+    
+        FilmesPorAtorFakeDB db = new FilmesPorAtorFakeDB();
+        for (FilmesPorAtor fpa : db.getTabela()) {
+            System.out.println(fpa);
+            
         }
     }
 }

@@ -26,6 +26,21 @@ public class FilmesPorAtor extends BaseIdentificador {
         this.codigoFilme = codigoFilme;
     }
 
+    @Override
+    public String toString() {
+        String fpa = "";
+
+        fpa += "===================================== \n";
+
+        fpa += "BaseIdentificador [codigo=" + codigo + "] \n";
+
+        fpa += "FilmesPorAtor [codigoAtor=" + codigoAtor + ", codigoFilme=" + codigoFilme + "] \n";
+
+        fpa += "===================================== \n";
+        
+        return fpa;
+    }
+
     
     
 }

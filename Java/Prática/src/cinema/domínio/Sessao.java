@@ -31,7 +31,18 @@ public class Sessao extends BaseIdentificador {
         this.horario = horario;
         this.data = data;
     }
+    @Override
+    public String toString() {
+        String sessao = "";
 
+        sessao += "==================================== \n";
+
+        sessao += "BaseIdentificador [codigo=" + codigo + "] \n";
+
+        sessao += "Sessao [statusDaSessao=" + statusDaSessao + ", horario=" + horario + ", data=" + data + "] \n";
     
+        sessao += "==================================== \n";
     
+        return sessao;
+    }
 }
