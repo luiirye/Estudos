@@ -62,7 +62,7 @@ public class App {
         // for (Especialidade esp : db.getTabela()) {
         //     System.out.println(esp.toString());
             
-        // }
+        // 
         
         // EspecialdiadePorMedicoFakeDB db = new EspecialdiadePorMedicoFakeDB();
         // for (EspecialidadePorMedico espmed : db.getTabela()) {
